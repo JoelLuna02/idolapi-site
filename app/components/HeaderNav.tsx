@@ -23,7 +23,7 @@ export default function HeaderNav() {
 
                         <div
                             className="offcanvas offcanvas-end"
-                            tabIndex="-1"
+                            tabIndex={-1}
                             id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel"
                         >

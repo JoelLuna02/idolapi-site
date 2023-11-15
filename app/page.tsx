@@ -8,7 +8,15 @@ export const metadata = {
   charset: "utf-8",
 };
 
-export default function Home() {
+const getVTubers = async () => {
+  const res = await fetch('https://idolapi.vercel.app/api/vtuber')
+  if (!res.ok) { throw new Error('Failed to fetch data') }
+  return res.json()
+}
+
+export default async function Home() {
+  const vtubers = await getVTubers()
+  console.log(vtubers)
   return (
     <>
       <HeaderNav></HeaderNav>
