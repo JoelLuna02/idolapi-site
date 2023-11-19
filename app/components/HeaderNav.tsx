@@ -8,8 +8,8 @@ export default function HeaderNav() {
         <>
             <header>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow border border-0">
-                    <div className="container-fluid container-xl">
-                        <Link className="navbar-brand" href="#">IdolAPI</Link>
+                    <div className="container-fluid container">
+                        <Link className="navbar-brand" href="/">IdolAPI</Link>
                         <button
                             className="navbar-toggler"
                             type="button"
@@ -35,7 +35,7 @@ export default function HeaderNav() {
                             </div>
                             <div className="offcanvas-body p-4 pt-0 p-lg-0">
                                 <hr className="d-lg-none text-dark-50"></hr>
-                                <ul className="navbar-nav me-auto ms-auto mb-2 mb-lg-0 flex-row flex-wrap bd-navbar-nav">
+                                <ul className="navbar-nav me-3 ms-auto mb-2 mb-lg-0 flex-row flex-wrap bd-navbar-nav">
                                     <li className="nav-item col-6 col-lg-auto">
                                         <Link className="nav-link py-2 px-0 px-lg-2" href="/docs">Documentation</Link>
                                     </li>
